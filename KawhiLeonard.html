@@ -14,35 +14,12 @@
 <link rel="stylesheet" href="style.css">
 <title>Kawhi Leonard</title>
 <meta charset="utf-8">
+<script src="colors.js"></script>
 </head>
 
 <body>
 <h1><a href="index.html">Best small forwards</a></h1>
-<input id="dark_light" type="button" value="Dark mode" onclick="
-var target=document.querySelector('body');
-if (this.value==='Dark mode') {
-  target.style.backgroundColor='black';
-  target.style.color='white';
-  this.value='Light mode';
-
-  var alist = document.querySelectorAll('a');
-  var i=0;
-  while (i < alist.length) {
-    alist[i].style.color='powderblue';
-    i = i+1;
-  }
-} else {
-  target.style.backgroundColor='white';
-  target.style.color='black';
-  this.value='Dark mode';
-  var alist = document.querySelectorAll('a');
-  var i=0;
-  while (i < alist.length) {
-    alist[i].style.color='darkblue';
-    i = i+1;
-  }
-}
-">
+<input id="dark_light" type="button" value="Dark mode" onclick="darkLightHandler(this);">
 <div id="grid">
 <ul>
 <li><a href="PaulGeorge.html">Paul George</a></li>
